@@ -1,4 +1,4 @@
-package lesson3;
+package lesson4;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -28,7 +28,7 @@ public abstract class AbstractTest {
     @BeforeAll
     static void initTest() throws IOException {
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
-        configFile = new FileInputStream("src/main/resources/my.properties.properties");
+        configFile = new FileInputStream("src/main/resources/my.properties");
         prop.load(configFile);
 
         apiKey =  prop.getProperty("apiKey");
