@@ -32,4 +32,5 @@ public class Utils {
 
         GetCategoryResponse getCategoryResponseReader = mapper.readValue(reader, GetCategoryResponse.class);
     }
+    //
 }
